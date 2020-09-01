@@ -9,16 +9,16 @@ Your task is to bring the next generation of dance education to users around the
 
 AUTHENTICATION  
 As a user:
-- [ ] I want to navigate to the /signup route to sign up with an email and a password
+- [ ] I want to navigate to the /signup View Controller to sign up with an email and a password
   - [ ] I want my email to be unique to me when I sign up. If a user already has the email I specified I should be presented with an error alert informing me of the issue.
-- [ ] I want to navigate to the /login route to login to my account with my email and password
+- [ ] I want to navigate to the /login View Controller to login to my account with my email and password
   - [ ] I want the login page to show me some indication of an error if my login information is incorrect
   - [ ] I want the login page to have a link to the /signup page if I do not already have an account
 - [ ] I want to be able to logout of my account
 
 CLASSES INDEX  
 As an unauthenticated user:
-- [ ] I want to navigate to the /classes route to see what classes are available.
+- [ ] I want to navigate to the /classes View/Navigation Controller to see what classes are available.
 - [ ] I want the login page to appear in a modal if I try to view one of the classes by clicking on the thumbnail
   
   when I am viewing or searching the available classes
@@ -27,9 +27,8 @@ As an unauthenticated user:
     - [ ] I want to search without worrying about case sensitivity
     - [ ] I want my search results to show partial results e.g. searching "Anne" will return "Leanne" and "Anne"
 
-
 As an authenticated user:
-- [ ] I want to navigate to the /classes route to see what classes are available.
+- [ ] I want to navigate to the /classes View Controller to see what classes are available.
   - [ ] I want /classes to be the view the app launches to once the user is signed in. 
   - [ ] I want to see a loading state when I fetch classes
 - [ ] I want to enter the class player when I click on a class thumbnail  
@@ -39,7 +38,7 @@ As an authenticated user:
 
 CLASS PAGE  
 As an authenticated user:
-- [ ] I want to navigate to the /video route (in Figma) for each class
+- [ ] I want to navigate to the /video View Controller using iOS native AvPlayer (in Figma) for each class url
 - [ ] I want to play the video in landscape mode 
 - [ ] I want to pause the video
 - [ ] I want to see a timestamp of how many seconds I have elapsed in the video
