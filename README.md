@@ -1,1 +1,1 @@
-# senior-ios-coding-challenge
+# Senior iOS Coding Challenge
