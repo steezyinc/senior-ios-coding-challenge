@@ -20,7 +20,6 @@ CLASSES INDEX
 As an unauthenticated user:
 - [ ] I want to navigate to the /classes View/Navigation Controller to see what classes are available.
 - [ ] I want the login page to appear in a modal if I try to view one of the classes by clicking on the thumbnail
-  
   when I am viewing or searching the available classes
   - [ ] I want to see the title of the class, the instructor, the level, the class thumbnail, and the song used in the class
   - [ ] I want to search the entire catalog of classes. I want to search by title, instructor, level, or song
