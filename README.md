@@ -7,35 +7,16 @@ Your task is to bring the next generation of dance education to users around the
 
 ## Product Requirements
 
-AUTHENTICATION  
-As a user:
-- [ ] I want to navigate to the /signup View Controller to sign up with an email and a password
-  - [ ] I want my email to be unique to me when I sign up. If a user already has the email I specified I should be presented with an error alert informing me of the issue.
-- [ ] I want to navigate to the /login View Controller to login to my account with my email and password
-  - [ ] I want the login page to show me some indication of an error if my login information is incorrect
-  - [ ] I want the login page to have a link to the /signup page if I do not already have an account
-  - [ ] I want to be able to logout of my account
-
 CLASSES INDEX  
-As an unauthenticated user:
-- [ ] I want to navigate to the /classes View/Navigation Controller to see what classes are available.
-- [ ] I want the login page to appear in a modal if I try to view one of the classes by clicking on the thumbnail
-  when I am viewing or searching the available classes
+As a user:
+- [ ] I want to navigate to the /classes View/Navigation Controller to see what classes are available
 - [ ] I want to see the title of the class, the instructor, the level, the class thumbnail, and the song used in the class
 - [ ] I want to search the entire catalog of classes. I want to search by title, instructor, level, or song
 - [ ] I want to search without worrying about case sensitivity
-- [ ] I want my search results to show partial results e.g. searching "Anne" will return "Leanne" and "Anne"
+- [ ] I want to enter the class player when I click on a class thumbnail when I am viewing or searching the available classes
 
-As an authenticated user:
-- [ ] I want to navigate to the /classes View Controller to see what classes are available.
-- [ ] I want /classes to be the view the app launches to once the user is signed in. 
-- [ ] I want to see a loading state when I fetch classes
-- [ ] I want to enter the class player when I click on a class thumbnail  
-  when I am viewing or searching the available classes
-  - [ ] I want the search functionality to mirror the unauthenticated user flow
-
-CLASS PAGE  
-As an authenticated user:
+CLASS PLAYER PAGE  
+As a user:
 - [ ] I want to navigate to the /video View Controller using iOS native AvPlayer (in Figma) for each class url
 - [ ] I want to play the video in landscape mode 
 - [ ] I want to pause the video
@@ -48,11 +29,34 @@ As an authenticated user:
 ANALYTICS  
 As a user:
 - [ ] I want the application to track what timestamp I last left off in the class
+  - [ ] This should be indicated by the progress bar on the class card
 - [ ] I want the application to track what percentage of the class the user actually watched
+  - [ ] This should be displayed on the top right of the class card
   - [ ] Case 1: User repeatedly watches the first 10% of the video and then closes the class player. The progress should only be 10%.
   - [ ] Case 2: User watches the first 15% of the video. The user seeks to 10% timestamp and watches up to 25%. The user has only watched a total of 25% of the video. The total progress should be 25%.
   - [ ] Case 3: User watches the first 10% and the last 10% of the video. The user has watched a total of 20% of the video. The total progress should be 20%.
-- [ ] I want the application to track how much time the user actually spent on the video. This includes play time and pause time
+
+### EXTRA CREDIT
+
+AUTHENTICATION  
+As an unauthenticated user:
+- [ ] I want to navigate to the /signup View Controller to sign up with an email and a password
+  - [ ] I want my email to be unique to me when I sign up. If a user already has the email I specified I should be presented with an error alert informing me of the issue.
+- [ ] I want to navigate to the /login View Controller to login to my account with my email and password
+  - [ ] I want the login page to show me some indication of an error if my login information is incorrect
+  - [ ] I want the login page to have a link to the /signup page if I do not already have an account
+  - [ ] I want to be able to logout of my account
+
+CLASSES INDEX  
+As a user:
+- [ ] I want my search results to show partial results e.g. searching "Anne" will return "Leanne" and "Anne"
+
+As an unauthenticated user:
+- [ ] I want the login page to appear in a modal if I try to view one of the classes by clicking on the thumbnail when I am viewing or searching the available classes
+
+As an authenticated user:
+- [ ] I want /classes to be the view the app launches to once the user is signed in. 
+- [ ] I want to see a loading state when I fetch classes
 
 NAVIGATION HEADER  
 As a user:
