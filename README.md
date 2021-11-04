@@ -7,42 +7,37 @@ Your task is to bring the next generation of dance education to users around the
 
 ## Product Requirements
 
-AUTHENTICATION  
-As an unauthenticated user:
-- [ ] I want to navigate to the /signup View Controller to sign up with an email and a password
-  - [ ] I want my email to be unique to me when I sign up. If a user already has the email I specified I should be presented with an error alert informing me of the issue.
-- [ ] I want to navigate to the /login View Controller to login to my account with my email and password
-  - [ ] I want the login page to show me some indication of an error if my login information is incorrect
-  - [ ] I want the login page to have a link to the /signup page if I do not already have an account
-- [ ] I want to be able to logout of my account
+### [Feature] Display class list and play video
 
-CLASSES INDEX  
-As an authenticated user:
-- [ ] I want to navigate to the /classes View/Navigation Controller to see what classes are available
-- [ ] I want to see the title of the class, the instructor, the level, the class thumbnail, and the song used in the class
-- [ ] I want to search the entire catalog of classes. I want to search by title, instructor, level, or song
-- [ ] I want to search without worrying about case sensitivity
-- [ ] I want to enter the class player when I click on a class thumbnail when I am viewing or searching the available classes
+As a user,  
+I want to navigate to the classes index page and view instructional dance videos,  
+so that I can take class and improve my dance skills.
 
-CLASS PLAYER PAGE  
-As an authenticated user:
-- [ ] I want to navigate to the /video View Controller using iOS native AvPlayer (in Figma) for each class url
-- [ ] I want to play the video in landscape mode 
-- [ ] I want to pause the video
-- [ ] I want to see a timestamp of how many seconds I have elapsed in the video
-- [ ] I want to see a timestamp of how many seconds I have remaining in the video
-- [ ] I want to see a progress bar representing where I am in the video
-- [ ] I want to be able to seek to different parts of the video by clicking on the progress bar
-- [ ] I should be able to exit the video and return to the Classes view
+**Acceptance Criteria**
 
-ANALYTICS  
-As an authenticated  user:
-- [ ] I want the application to track what timestamp I last left off in the class
-- [ ] I want the application to track what percentage of the class the user actually watched
-  - [ ] Case 1: User repeatedly watches the first 10% of the video and then closes the class player. The progress should only be 10%.
-  - [ ] Case 2: User watches the first 15% of the video. The user seeks to 10% timestamp and watches up to 25%. The user has only watched a total of 25% of the video. The total progress should be 25%.
-  - [ ] Case 3: User watches the first 10% and the last 10% of the video. The user has watched a total of 20% of the video. The total progress should be 20%.
-- [ ] I want the application to track how much time the user actually spent on the video. This includes play time and pause time
+As a user:
+
+- [ ] I want to be displayed a list of classes offered to me.
+- [ ] I want to know what the title of each class is.
+- [ ] I want to know who the instructor of each class is.
+- [ ] I want to navigate to the /video View Controller when clicking on a class using iOS native AvPlayer (in Figma) for each class url
+- [ ] I want to be able to play, pause, and seek the videos on the video view.
+- [ ] I should be able to exit the video and return to the list of classes
+
+### [Feature] Track user's progress
+
+As a user,
+I want STEEZY to track my progress,
+so that I know how well I'm progressing in my dance journey.
+
+**Acceptance Criteria**
+As a user: 
+
+- [ ] I want to track what timestamp I progressed to in class. For example, if I watched 30 seconds of the video and paused, my progress timestamp should be recorded at 30 seconds.
+- [ ] I want to track what percentage of the class I actually played.
+  - Case 1: User repeatedly watches the first 10% of the video. The progress should only be 10%.
+  - Case 2: User watches the first 15% of the video. The user seeks back to 0% and watches up to 20%. The user has only watched a total of 20% of the video.
+  - Case 3: User watches the first 10% and the last 10% of the video. The user has watched a total of 20% of the video. The total progress should be 20%.
 
 ## Your Goal
 
@@ -50,24 +45,16 @@ Create an iOS app that satisfies as many product requirements as you can for you
 
 To achieve this you will need to utilize the CSV/spreadsheet data provided in this repository. The CSV should be dumped into some kind of data store and accessed through an API. Feel free to use a database you are most comfortable with.
 
-For the layout of each page, please refer to the [provided wireframes here on Figma](https://www.figma.com/file/vLykDDDycDl4LrcY8VQQB8/Untitled?node-id=0%3A1). Your designs do not need to mirror the exact styling of the mockups. Feel free to keep it as simple as possible or flex your design muscles. Use Figma as an inspirational reference. 
-
 You are welcome to use any type of boilerplate or frameworks for your application as long as it meets the technical requirements below. We encourage you to use your favorite packages and tools to build a solid application, but try to keep it as simple as possible!
  
 
 ## Technical Requirements
 - Swift
 - You can create your UI in XIBs or code or a combination of both, but try to avoid using a Storyboard if possible
-- Any database of your choosing
-- Tests are a plus, but not required
-- 
 
 ## Instructions
-
 - Clone this repository.
 - Build a performant, clean and well-structured solution.
-- Deploy the app using a service of your choice.
-- Remember to have fun with it and try to commit as early and as often as possible!
 - When you're finished please send us instructions on how to access your service and download a ZIP of the project using the Github GUI and send us an email with the attachment to notify us.
 
 Best of luck and happy coding!
